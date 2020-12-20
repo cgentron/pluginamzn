@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package cgentron.amazn;
+option go_package = "github.com/pluginamzn/ap;api";
+
+// A generic empty message ...
+message Empty{}

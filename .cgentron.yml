@@ -1,0 +1,6 @@
+name: Amzn Plugin
+description: 'Plugin to support Amazn'
+
+type: resolver
+
+import: github.com/cgentron/pluginamzn

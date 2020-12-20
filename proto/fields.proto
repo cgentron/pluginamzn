@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package cgentron.amazn;
+
+option cc_enable_arenas = true;
+option go_package = "github.com/pluginamzn/ap;api";
+
+message Fields {
+  string selector = 1;
+
+  message DynamoDB {
+    string ExpressionValue = 1;
+    string Key = 2;
+  }
+
+  oneof pattern {
+    DynamoDB dynamodb   = 10;
+  }
+}
