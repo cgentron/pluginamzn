@@ -6,12 +6,12 @@ import "methods.proto";
 import "fields.proto";
 import "google/protobuf/descriptor.proto";
 
-option go_package = "github.com/pluginamzn/ap;api";
+option go_package = "github.com/cgentron/pluginamzn/api;api";
 
 extend google.protobuf.MethodOptions {
-  Methods methods = 12345678;
+  Methods methods = 12345679;
 }
 
 extend google.protobuf.FieldOptions {
-  Fields fields = 12345678;
+  Fields fields = 12345679;
 }
