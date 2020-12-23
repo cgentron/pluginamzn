@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package cgentron.amazn;
+package cgentron.amazon;
 
 import "cgentron/api/annotations.proto";
 
