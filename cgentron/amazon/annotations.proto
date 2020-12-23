@@ -2,11 +2,11 @@ syntax = "proto3";
 
 package cgentron.amazon;
 
-import "methods.proto";
-import "fields.proto";
+import "cgentron/amazon/methods.proto";
+import "cgentron/amazon/fields.proto";
 import "google/protobuf/descriptor.proto";
 
-option go_package = "github.com/cgentron/pluginamzn/api;api";
+option go_package = "github.com/cgentron/pluginamzn/proto;proto";
 
 extend google.protobuf.MethodOptions {
   Methods methods = 12345679;

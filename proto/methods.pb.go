@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.23.0
 // 	protoc        v3.14.0
-// source: methods.proto
+// source: cgentron/amazon/methods.proto
 
-package api
+package proto
 
 import (
 	_ "github.com/cgentron/api/proto"
@@ -45,7 +45,7 @@ type Methods struct {
 func (x *Methods) Reset() {
 	*x = Methods{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_methods_proto_msgTypes[0]
+		mi := &file_cgentron_amazon_methods_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -58,7 +58,7 @@ func (x *Methods) String() string {
 func (*Methods) ProtoMessage() {}
 
 func (x *Methods) ProtoReflect() protoreflect.Message {
-	mi := &file_methods_proto_msgTypes[0]
+	mi := &file_cgentron_amazon_methods_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -71,7 +71,7 @@ func (x *Methods) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Methods.ProtoReflect.Descriptor instead.
 func (*Methods) Descriptor() ([]byte, []int) {
-	return file_methods_proto_rawDescGZIP(), []int{0}
+	return file_cgentron_amazon_methods_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *Methods) GetSelector() string {
@@ -169,7 +169,7 @@ type Methods_Lambda struct {
 func (x *Methods_Lambda) Reset() {
 	*x = Methods_Lambda{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_methods_proto_msgTypes[1]
+		mi := &file_cgentron_amazon_methods_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -182,7 +182,7 @@ func (x *Methods_Lambda) String() string {
 func (*Methods_Lambda) ProtoMessage() {}
 
 func (x *Methods_Lambda) ProtoReflect() protoreflect.Message {
-	mi := &file_methods_proto_msgTypes[1]
+	mi := &file_cgentron_amazon_methods_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -195,7 +195,7 @@ func (x *Methods_Lambda) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Methods_Lambda.ProtoReflect.Descriptor instead.
 func (*Methods_Lambda) Descriptor() ([]byte, []int) {
-	return file_methods_proto_rawDescGZIP(), []int{0, 0}
+	return file_cgentron_amazon_methods_proto_rawDescGZIP(), []int{0, 0}
 }
 
 func (x *Methods_Lambda) GetFunctionName() string {
@@ -230,7 +230,7 @@ type Methods_DynamoDB struct {
 func (x *Methods_DynamoDB) Reset() {
 	*x = Methods_DynamoDB{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_methods_proto_msgTypes[2]
+		mi := &file_cgentron_amazon_methods_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -243,7 +243,7 @@ func (x *Methods_DynamoDB) String() string {
 func (*Methods_DynamoDB) ProtoMessage() {}
 
 func (x *Methods_DynamoDB) ProtoReflect() protoreflect.Message {
-	mi := &file_methods_proto_msgTypes[2]
+	mi := &file_cgentron_amazon_methods_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -256,7 +256,7 @@ func (x *Methods_DynamoDB) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Methods_DynamoDB.ProtoReflect.Descriptor instead.
 func (*Methods_DynamoDB) Descriptor() ([]byte, []int) {
-	return file_methods_proto_rawDescGZIP(), []int{0, 1}
+	return file_cgentron_amazon_methods_proto_rawDescGZIP(), []int{0, 1}
 }
 
 func (m *Methods_DynamoDB) GetInput() isMethods_DynamoDB_Input {
@@ -357,7 +357,7 @@ type Methods_SQS struct {
 func (x *Methods_SQS) Reset() {
 	*x = Methods_SQS{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_methods_proto_msgTypes[3]
+		mi := &file_cgentron_amazon_methods_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -370,7 +370,7 @@ func (x *Methods_SQS) String() string {
 func (*Methods_SQS) ProtoMessage() {}
 
 func (x *Methods_SQS) ProtoReflect() protoreflect.Message {
-	mi := &file_methods_proto_msgTypes[3]
+	mi := &file_cgentron_amazon_methods_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -383,7 +383,7 @@ func (x *Methods_SQS) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Methods_SQS.ProtoReflect.Descriptor instead.
 func (*Methods_SQS) Descriptor() ([]byte, []int) {
-	return file_methods_proto_rawDescGZIP(), []int{0, 2}
+	return file_cgentron_amazon_methods_proto_rawDescGZIP(), []int{0, 2}
 }
 
 type Methods_MSK struct {
@@ -397,7 +397,7 @@ type Methods_MSK struct {
 func (x *Methods_MSK) Reset() {
 	*x = Methods_MSK{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_methods_proto_msgTypes[4]
+		mi := &file_cgentron_amazon_methods_proto_msgTypes[4]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -410,7 +410,7 @@ func (x *Methods_MSK) String() string {
 func (*Methods_MSK) ProtoMessage() {}
 
 func (x *Methods_MSK) ProtoReflect() protoreflect.Message {
-	mi := &file_methods_proto_msgTypes[4]
+	mi := &file_cgentron_amazon_methods_proto_msgTypes[4]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -423,7 +423,7 @@ func (x *Methods_MSK) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Methods_MSK.ProtoReflect.Descriptor instead.
 func (*Methods_MSK) Descriptor() ([]byte, []int) {
-	return file_methods_proto_rawDescGZIP(), []int{0, 3}
+	return file_cgentron_amazon_methods_proto_rawDescGZIP(), []int{0, 3}
 }
 
 func (x *Methods_MSK) GetBootstrapServer() []string {
@@ -444,7 +444,7 @@ type Methods_Kinesis struct {
 func (x *Methods_Kinesis) Reset() {
 	*x = Methods_Kinesis{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_methods_proto_msgTypes[5]
+		mi := &file_cgentron_amazon_methods_proto_msgTypes[5]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -457,7 +457,7 @@ func (x *Methods_Kinesis) String() string {
 func (*Methods_Kinesis) ProtoMessage() {}
 
 func (x *Methods_Kinesis) ProtoReflect() protoreflect.Message {
-	mi := &file_methods_proto_msgTypes[5]
+	mi := &file_cgentron_amazon_methods_proto_msgTypes[5]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -470,7 +470,7 @@ func (x *Methods_Kinesis) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Methods_Kinesis.ProtoReflect.Descriptor instead.
 func (*Methods_Kinesis) Descriptor() ([]byte, []int) {
-	return file_methods_proto_rawDescGZIP(), []int{0, 4}
+	return file_cgentron_amazon_methods_proto_rawDescGZIP(), []int{0, 4}
 }
 
 func (x *Methods_Kinesis) GetStreamArn() string {
@@ -500,7 +500,7 @@ type Methods_DynamoDB_AttributValue struct {
 func (x *Methods_DynamoDB_AttributValue) Reset() {
 	*x = Methods_DynamoDB_AttributValue{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_methods_proto_msgTypes[6]
+		mi := &file_cgentron_amazon_methods_proto_msgTypes[6]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -513,7 +513,7 @@ func (x *Methods_DynamoDB_AttributValue) String() string {
 func (*Methods_DynamoDB_AttributValue) ProtoMessage() {}
 
 func (x *Methods_DynamoDB_AttributValue) ProtoReflect() protoreflect.Message {
-	mi := &file_methods_proto_msgTypes[6]
+	mi := &file_cgentron_amazon_methods_proto_msgTypes[6]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -526,7 +526,7 @@ func (x *Methods_DynamoDB_AttributValue) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Methods_DynamoDB_AttributValue.ProtoReflect.Descriptor instead.
 func (*Methods_DynamoDB_AttributValue) Descriptor() ([]byte, []int) {
-	return file_methods_proto_rawDescGZIP(), []int{0, 1, 0}
+	return file_cgentron_amazon_methods_proto_rawDescGZIP(), []int{0, 1, 0}
 }
 
 func (x *Methods_DynamoDB_AttributValue) GetB() []byte {
@@ -615,7 +615,7 @@ type Methods_DynamoDB_GetItemInput struct {
 func (x *Methods_DynamoDB_GetItemInput) Reset() {
 	*x = Methods_DynamoDB_GetItemInput{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_methods_proto_msgTypes[7]
+		mi := &file_cgentron_amazon_methods_proto_msgTypes[7]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -628,7 +628,7 @@ func (x *Methods_DynamoDB_GetItemInput) String() string {
 func (*Methods_DynamoDB_GetItemInput) ProtoMessage() {}
 
 func (x *Methods_DynamoDB_GetItemInput) ProtoReflect() protoreflect.Message {
-	mi := &file_methods_proto_msgTypes[7]
+	mi := &file_cgentron_amazon_methods_proto_msgTypes[7]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -641,7 +641,7 @@ func (x *Methods_DynamoDB_GetItemInput) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Methods_DynamoDB_GetItemInput.ProtoReflect.Descriptor instead.
 func (*Methods_DynamoDB_GetItemInput) Descriptor() ([]byte, []int) {
-	return file_methods_proto_rawDescGZIP(), []int{0, 1, 1}
+	return file_cgentron_amazon_methods_proto_rawDescGZIP(), []int{0, 1, 1}
 }
 
 func (x *Methods_DynamoDB_GetItemInput) GetAttributesToGet() []string {
@@ -703,7 +703,7 @@ type Methods_DynamoDB_PutItemInput struct {
 func (x *Methods_DynamoDB_PutItemInput) Reset() {
 	*x = Methods_DynamoDB_PutItemInput{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_methods_proto_msgTypes[8]
+		mi := &file_cgentron_amazon_methods_proto_msgTypes[8]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -716,7 +716,7 @@ func (x *Methods_DynamoDB_PutItemInput) String() string {
 func (*Methods_DynamoDB_PutItemInput) ProtoMessage() {}
 
 func (x *Methods_DynamoDB_PutItemInput) ProtoReflect() protoreflect.Message {
-	mi := &file_methods_proto_msgTypes[8]
+	mi := &file_cgentron_amazon_methods_proto_msgTypes[8]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -729,7 +729,7 @@ func (x *Methods_DynamoDB_PutItemInput) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Methods_DynamoDB_PutItemInput.ProtoReflect.Descriptor instead.
 func (*Methods_DynamoDB_PutItemInput) Descriptor() ([]byte, []int) {
-	return file_methods_proto_rawDescGZIP(), []int{0, 1, 2}
+	return file_cgentron_amazon_methods_proto_rawDescGZIP(), []int{0, 1, 2}
 }
 
 func (x *Methods_DynamoDB_PutItemInput) GetTableName() string {
@@ -799,7 +799,7 @@ type Methods_DynamoDB_UpdateItemInput struct {
 func (x *Methods_DynamoDB_UpdateItemInput) Reset() {
 	*x = Methods_DynamoDB_UpdateItemInput{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_methods_proto_msgTypes[9]
+		mi := &file_cgentron_amazon_methods_proto_msgTypes[9]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -812,7 +812,7 @@ func (x *Methods_DynamoDB_UpdateItemInput) String() string {
 func (*Methods_DynamoDB_UpdateItemInput) ProtoMessage() {}
 
 func (x *Methods_DynamoDB_UpdateItemInput) ProtoReflect() protoreflect.Message {
-	mi := &file_methods_proto_msgTypes[9]
+	mi := &file_cgentron_amazon_methods_proto_msgTypes[9]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -825,7 +825,7 @@ func (x *Methods_DynamoDB_UpdateItemInput) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Methods_DynamoDB_UpdateItemInput.ProtoReflect.Descriptor instead.
 func (*Methods_DynamoDB_UpdateItemInput) Descriptor() ([]byte, []int) {
-	return file_methods_proto_rawDescGZIP(), []int{0, 1, 3}
+	return file_cgentron_amazon_methods_proto_rawDescGZIP(), []int{0, 1, 3}
 }
 
 func (x *Methods_DynamoDB_UpdateItemInput) GetTableName() string {
@@ -893,7 +893,7 @@ type Methods_DynamoDB_DeleteItemInput struct {
 func (x *Methods_DynamoDB_DeleteItemInput) Reset() {
 	*x = Methods_DynamoDB_DeleteItemInput{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_methods_proto_msgTypes[10]
+		mi := &file_cgentron_amazon_methods_proto_msgTypes[10]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -906,7 +906,7 @@ func (x *Methods_DynamoDB_DeleteItemInput) String() string {
 func (*Methods_DynamoDB_DeleteItemInput) ProtoMessage() {}
 
 func (x *Methods_DynamoDB_DeleteItemInput) ProtoReflect() protoreflect.Message {
-	mi := &file_methods_proto_msgTypes[10]
+	mi := &file_cgentron_amazon_methods_proto_msgTypes[10]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -919,7 +919,7 @@ func (x *Methods_DynamoDB_DeleteItemInput) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Methods_DynamoDB_DeleteItemInput.ProtoReflect.Descriptor instead.
 func (*Methods_DynamoDB_DeleteItemInput) Descriptor() ([]byte, []int) {
-	return file_methods_proto_rawDescGZIP(), []int{0, 1, 4}
+	return file_cgentron_amazon_methods_proto_rawDescGZIP(), []int{0, 1, 4}
 }
 
 type Methods_DynamoDB_QueryInput struct {
@@ -931,7 +931,7 @@ type Methods_DynamoDB_QueryInput struct {
 func (x *Methods_DynamoDB_QueryInput) Reset() {
 	*x = Methods_DynamoDB_QueryInput{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_methods_proto_msgTypes[11]
+		mi := &file_cgentron_amazon_methods_proto_msgTypes[11]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -944,7 +944,7 @@ func (x *Methods_DynamoDB_QueryInput) String() string {
 func (*Methods_DynamoDB_QueryInput) ProtoMessage() {}
 
 func (x *Methods_DynamoDB_QueryInput) ProtoReflect() protoreflect.Message {
-	mi := &file_methods_proto_msgTypes[11]
+	mi := &file_cgentron_amazon_methods_proto_msgTypes[11]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -957,7 +957,7 @@ func (x *Methods_DynamoDB_QueryInput) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Methods_DynamoDB_QueryInput.ProtoReflect.Descriptor instead.
 func (*Methods_DynamoDB_QueryInput) Descriptor() ([]byte, []int) {
-	return file_methods_proto_rawDescGZIP(), []int{0, 1, 5}
+	return file_cgentron_amazon_methods_proto_rawDescGZIP(), []int{0, 1, 5}
 }
 
 type Methods_DynamoDB_ScanInput struct {
@@ -969,7 +969,7 @@ type Methods_DynamoDB_ScanInput struct {
 func (x *Methods_DynamoDB_ScanInput) Reset() {
 	*x = Methods_DynamoDB_ScanInput{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_methods_proto_msgTypes[12]
+		mi := &file_cgentron_amazon_methods_proto_msgTypes[12]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -982,7 +982,7 @@ func (x *Methods_DynamoDB_ScanInput) String() string {
 func (*Methods_DynamoDB_ScanInput) ProtoMessage() {}
 
 func (x *Methods_DynamoDB_ScanInput) ProtoReflect() protoreflect.Message {
-	mi := &file_methods_proto_msgTypes[12]
+	mi := &file_cgentron_amazon_methods_proto_msgTypes[12]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -995,13 +995,14 @@ func (x *Methods_DynamoDB_ScanInput) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Methods_DynamoDB_ScanInput.ProtoReflect.Descriptor instead.
 func (*Methods_DynamoDB_ScanInput) Descriptor() ([]byte, []int) {
-	return file_methods_proto_rawDescGZIP(), []int{0, 1, 6}
+	return file_cgentron_amazon_methods_proto_rawDescGZIP(), []int{0, 1, 6}
 }
 
-var File_methods_proto protoreflect.FileDescriptor
+var File_cgentron_amazon_methods_proto protoreflect.FileDescriptor
 
-var file_methods_proto_rawDesc = []byte{
-	0x0a, 0x0d, 0x6d, 0x65, 0x74, 0x68, 0x6f, 0x64, 0x73, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12,
+var file_cgentron_amazon_methods_proto_rawDesc = []byte{
+	0x0a, 0x1d, 0x63, 0x67, 0x65, 0x6e, 0x74, 0x72, 0x6f, 0x6e, 0x2f, 0x61, 0x6d, 0x61, 0x7a, 0x6f,
+	0x6e, 0x2f, 0x6d, 0x65, 0x74, 0x68, 0x6f, 0x64, 0x73, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12,
 	0x0f, 0x63, 0x67, 0x65, 0x6e, 0x74, 0x72, 0x6f, 0x6e, 0x2e, 0x61, 0x6d, 0x61, 0x7a, 0x6f, 0x6e,
 	0x1a, 0x1e, 0x63, 0x67, 0x65, 0x6e, 0x74, 0x72, 0x6f, 0x6e, 0x2f, 0x61, 0x70, 0x69, 0x2f, 0x61,
 	0x6e, 0x6e, 0x6f, 0x74, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x73, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f,
@@ -1190,26 +1191,27 @@ var file_methods_proto_rawDesc = []byte{
 	0x72, 0x76, 0x65, 0x72, 0x1a, 0x28, 0x0a, 0x07, 0x4b, 0x69, 0x6e, 0x65, 0x73, 0x69, 0x73, 0x12,
 	0x1d, 0x0a, 0x0a, 0x73, 0x74, 0x72, 0x65, 0x61, 0x6d, 0x5f, 0x61, 0x72, 0x6e, 0x18, 0x01, 0x20,
 	0x01, 0x28, 0x09, 0x52, 0x09, 0x73, 0x74, 0x72, 0x65, 0x61, 0x6d, 0x41, 0x72, 0x6e, 0x42, 0x09,
-	0x0a, 0x07, 0x70, 0x61, 0x74, 0x74, 0x65, 0x72, 0x6e, 0x42, 0x2b, 0x5a, 0x26, 0x67, 0x69, 0x74,
+	0x0a, 0x07, 0x70, 0x61, 0x74, 0x74, 0x65, 0x72, 0x6e, 0x42, 0x2f, 0x5a, 0x2a, 0x67, 0x69, 0x74,
 	0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x63, 0x67, 0x65, 0x6e, 0x74, 0x72, 0x6f, 0x6e,
-	0x2f, 0x70, 0x6c, 0x75, 0x67, 0x69, 0x6e, 0x61, 0x6d, 0x7a, 0x6e, 0x2f, 0x61, 0x70, 0x69, 0x3b,
-	0x61, 0x70, 0x69, 0xf8, 0x01, 0x01, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x2f, 0x70, 0x6c, 0x75, 0x67, 0x69, 0x6e, 0x61, 0x6d, 0x7a, 0x6e, 0x2f, 0x70, 0x72, 0x6f, 0x74,
+	0x6f, 0x3b, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0xf8, 0x01, 0x01, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74,
+	0x6f, 0x33,
 }
 
 var (
-	file_methods_proto_rawDescOnce sync.Once
-	file_methods_proto_rawDescData = file_methods_proto_rawDesc
+	file_cgentron_amazon_methods_proto_rawDescOnce sync.Once
+	file_cgentron_amazon_methods_proto_rawDescData = file_cgentron_amazon_methods_proto_rawDesc
 )
 
-func file_methods_proto_rawDescGZIP() []byte {
-	file_methods_proto_rawDescOnce.Do(func() {
-		file_methods_proto_rawDescData = protoimpl.X.CompressGZIP(file_methods_proto_rawDescData)
+func file_cgentron_amazon_methods_proto_rawDescGZIP() []byte {
+	file_cgentron_amazon_methods_proto_rawDescOnce.Do(func() {
+		file_cgentron_amazon_methods_proto_rawDescData = protoimpl.X.CompressGZIP(file_cgentron_amazon_methods_proto_rawDescData)
 	})
-	return file_methods_proto_rawDescData
+	return file_cgentron_amazon_methods_proto_rawDescData
 }
 
-var file_methods_proto_msgTypes = make([]protoimpl.MessageInfo, 17)
-var file_methods_proto_goTypes = []interface{}{
+var file_cgentron_amazon_methods_proto_msgTypes = make([]protoimpl.MessageInfo, 17)
+var file_cgentron_amazon_methods_proto_goTypes = []interface{}{
 	(*Methods)(nil),                          // 0: cgentron.amazon.Methods
 	(*Methods_Lambda)(nil),                   // 1: cgentron.amazon.Methods.Lambda
 	(*Methods_DynamoDB)(nil),                 // 2: cgentron.amazon.Methods.DynamoDB
@@ -1228,7 +1230,7 @@ var file_methods_proto_goTypes = []interface{}{
 	nil,                                      // 15: cgentron.amazon.Methods.DynamoDB.PutItemInput.ExpressionAttributeNamesEntry
 	nil,                                      // 16: cgentron.amazon.Methods.DynamoDB.UpdateItemInput.ExpressionAttributeNamesEntry
 }
-var file_methods_proto_depIdxs = []int32{
+var file_cgentron_amazon_methods_proto_depIdxs = []int32{
 	1,  // 0: cgentron.amazon.Methods.lambda:type_name -> cgentron.amazon.Methods.Lambda
 	2,  // 1: cgentron.amazon.Methods.dynamodb:type_name -> cgentron.amazon.Methods.DynamoDB
 	3,  // 2: cgentron.amazon.Methods.sqs:type_name -> cgentron.amazon.Methods.SQS
@@ -1253,13 +1255,13 @@ var file_methods_proto_depIdxs = []int32{
 	0,  // [0:17] is the sub-list for field type_name
 }
 
-func init() { file_methods_proto_init() }
-func file_methods_proto_init() {
-	if File_methods_proto != nil {
+func init() { file_cgentron_amazon_methods_proto_init() }
+func file_cgentron_amazon_methods_proto_init() {
+	if File_cgentron_amazon_methods_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_methods_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_cgentron_amazon_methods_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Methods); i {
 			case 0:
 				return &v.state
@@ -1271,7 +1273,7 @@ func file_methods_proto_init() {
 				return nil
 			}
 		}
-		file_methods_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_cgentron_amazon_methods_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Methods_Lambda); i {
 			case 0:
 				return &v.state
@@ -1283,7 +1285,7 @@ func file_methods_proto_init() {
 				return nil
 			}
 		}
-		file_methods_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_cgentron_amazon_methods_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Methods_DynamoDB); i {
 			case 0:
 				return &v.state
@@ -1295,7 +1297,7 @@ func file_methods_proto_init() {
 				return nil
 			}
 		}
-		file_methods_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_cgentron_amazon_methods_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Methods_SQS); i {
 			case 0:
 				return &v.state
@@ -1307,7 +1309,7 @@ func file_methods_proto_init() {
 				return nil
 			}
 		}
-		file_methods_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_cgentron_amazon_methods_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Methods_MSK); i {
 			case 0:
 				return &v.state
@@ -1319,7 +1321,7 @@ func file_methods_proto_init() {
 				return nil
 			}
 		}
-		file_methods_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_cgentron_amazon_methods_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Methods_Kinesis); i {
 			case 0:
 				return &v.state
@@ -1331,7 +1333,7 @@ func file_methods_proto_init() {
 				return nil
 			}
 		}
-		file_methods_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_cgentron_amazon_methods_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Methods_DynamoDB_AttributValue); i {
 			case 0:
 				return &v.state
@@ -1343,7 +1345,7 @@ func file_methods_proto_init() {
 				return nil
 			}
 		}
-		file_methods_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_cgentron_amazon_methods_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Methods_DynamoDB_GetItemInput); i {
 			case 0:
 				return &v.state
@@ -1355,7 +1357,7 @@ func file_methods_proto_init() {
 				return nil
 			}
 		}
-		file_methods_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_cgentron_amazon_methods_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Methods_DynamoDB_PutItemInput); i {
 			case 0:
 				return &v.state
@@ -1367,7 +1369,7 @@ func file_methods_proto_init() {
 				return nil
 			}
 		}
-		file_methods_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_cgentron_amazon_methods_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Methods_DynamoDB_UpdateItemInput); i {
 			case 0:
 				return &v.state
@@ -1379,7 +1381,7 @@ func file_methods_proto_init() {
 				return nil
 			}
 		}
-		file_methods_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_cgentron_amazon_methods_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Methods_DynamoDB_DeleteItemInput); i {
 			case 0:
 				return &v.state
@@ -1391,7 +1393,7 @@ func file_methods_proto_init() {
 				return nil
 			}
 		}
-		file_methods_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_cgentron_amazon_methods_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Methods_DynamoDB_QueryInput); i {
 			case 0:
 				return &v.state
@@ -1403,7 +1405,7 @@ func file_methods_proto_init() {
 				return nil
 			}
 		}
-		file_methods_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_cgentron_amazon_methods_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Methods_DynamoDB_ScanInput); i {
 			case 0:
 				return &v.state
@@ -1416,14 +1418,14 @@ func file_methods_proto_init() {
 			}
 		}
 	}
-	file_methods_proto_msgTypes[0].OneofWrappers = []interface{}{
+	file_cgentron_amazon_methods_proto_msgTypes[0].OneofWrappers = []interface{}{
 		(*Methods_Lambda_)(nil),
 		(*Methods_Dynamodb)(nil),
 		(*Methods_Sqs)(nil),
 		(*Methods_Msk)(nil),
 		(*Methods_Kinesis_)(nil),
 	}
-	file_methods_proto_msgTypes[2].OneofWrappers = []interface{}{
+	file_cgentron_amazon_methods_proto_msgTypes[2].OneofWrappers = []interface{}{
 		(*Methods_DynamoDB_GetItem)(nil),
 		(*Methods_DynamoDB_PutItem)(nil),
 		(*Methods_DynamoDB_UpdateItem)(nil),
@@ -1435,18 +1437,18 @@ func file_methods_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_methods_proto_rawDesc,
+			RawDescriptor: file_cgentron_amazon_methods_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   17,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_methods_proto_goTypes,
-		DependencyIndexes: file_methods_proto_depIdxs,
-		MessageInfos:      file_methods_proto_msgTypes,
+		GoTypes:           file_cgentron_amazon_methods_proto_goTypes,
+		DependencyIndexes: file_cgentron_amazon_methods_proto_depIdxs,
+		MessageInfos:      file_cgentron_amazon_methods_proto_msgTypes,
 	}.Build()
-	File_methods_proto = out.File
-	file_methods_proto_rawDesc = nil
-	file_methods_proto_goTypes = nil
-	file_methods_proto_depIdxs = nil
+	File_cgentron_amazon_methods_proto = out.File
+	file_cgentron_amazon_methods_proto_rawDesc = nil
+	file_cgentron_amazon_methods_proto_goTypes = nil
+	file_cgentron_amazon_methods_proto_depIdxs = nil
 }

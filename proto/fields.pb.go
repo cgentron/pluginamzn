@@ -2,9 +2,9 @@
 // versions:
 // 	protoc-gen-go v1.23.0
 // 	protoc        v3.14.0
-// source: fields.proto
+// source: cgentron/amazon/fields.proto
 
-package api
+package proto
 
 import (
 	proto "github.com/golang/protobuf/proto"
@@ -39,7 +39,7 @@ type Fields struct {
 func (x *Fields) Reset() {
 	*x = Fields{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_fields_proto_msgTypes[0]
+		mi := &file_cgentron_amazon_fields_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -52,7 +52,7 @@ func (x *Fields) String() string {
 func (*Fields) ProtoMessage() {}
 
 func (x *Fields) ProtoReflect() protoreflect.Message {
-	mi := &file_fields_proto_msgTypes[0]
+	mi := &file_cgentron_amazon_fields_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -65,7 +65,7 @@ func (x *Fields) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fields.ProtoReflect.Descriptor instead.
 func (*Fields) Descriptor() ([]byte, []int) {
-	return file_fields_proto_rawDescGZIP(), []int{0}
+	return file_cgentron_amazon_fields_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *Fields) GetSelector() string {
@@ -111,7 +111,7 @@ type Fields_DynamoDB struct {
 func (x *Fields_DynamoDB) Reset() {
 	*x = Fields_DynamoDB{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_fields_proto_msgTypes[1]
+		mi := &file_cgentron_amazon_fields_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -124,7 +124,7 @@ func (x *Fields_DynamoDB) String() string {
 func (*Fields_DynamoDB) ProtoMessage() {}
 
 func (x *Fields_DynamoDB) ProtoReflect() protoreflect.Message {
-	mi := &file_fields_proto_msgTypes[1]
+	mi := &file_cgentron_amazon_fields_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -137,7 +137,7 @@ func (x *Fields_DynamoDB) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fields_DynamoDB.ProtoReflect.Descriptor instead.
 func (*Fields_DynamoDB) Descriptor() ([]byte, []int) {
-	return file_fields_proto_rawDescGZIP(), []int{0, 0}
+	return file_cgentron_amazon_fields_proto_rawDescGZIP(), []int{0, 0}
 }
 
 func (x *Fields_DynamoDB) GetExpressionValue() string {
@@ -154,10 +154,11 @@ func (x *Fields_DynamoDB) GetKey() string {
 	return ""
 }
 
-var File_fields_proto protoreflect.FileDescriptor
+var File_cgentron_amazon_fields_proto protoreflect.FileDescriptor
 
-var file_fields_proto_rawDesc = []byte{
-	0x0a, 0x0c, 0x66, 0x69, 0x65, 0x6c, 0x64, 0x73, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x0f,
+var file_cgentron_amazon_fields_proto_rawDesc = []byte{
+	0x0a, 0x1c, 0x63, 0x67, 0x65, 0x6e, 0x74, 0x72, 0x6f, 0x6e, 0x2f, 0x61, 0x6d, 0x61, 0x7a, 0x6f,
+	0x6e, 0x2f, 0x66, 0x69, 0x65, 0x6c, 0x64, 0x73, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x0f,
 	0x63, 0x67, 0x65, 0x6e, 0x74, 0x72, 0x6f, 0x6e, 0x2e, 0x61, 0x6d, 0x61, 0x7a, 0x6f, 0x6e, 0x22,
 	0xb7, 0x01, 0x0a, 0x06, 0x46, 0x69, 0x65, 0x6c, 0x64, 0x73, 0x12, 0x1a, 0x0a, 0x08, 0x73, 0x65,
 	0x6c, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x08, 0x73, 0x65,
@@ -170,30 +171,31 @@ var file_fields_proto_rawDesc = []byte{
 	0x56, 0x61, 0x6c, 0x75, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x0f, 0x45, 0x78, 0x70,
 	0x72, 0x65, 0x73, 0x73, 0x69, 0x6f, 0x6e, 0x56, 0x61, 0x6c, 0x75, 0x65, 0x12, 0x10, 0x0a, 0x03,
 	0x4b, 0x65, 0x79, 0x18, 0x02, 0x20, 0x01, 0x28, 0x09, 0x52, 0x03, 0x4b, 0x65, 0x79, 0x42, 0x09,
-	0x0a, 0x07, 0x70, 0x61, 0x74, 0x74, 0x65, 0x72, 0x6e, 0x42, 0x2b, 0x5a, 0x26, 0x67, 0x69, 0x74,
+	0x0a, 0x07, 0x70, 0x61, 0x74, 0x74, 0x65, 0x72, 0x6e, 0x42, 0x2f, 0x5a, 0x2a, 0x67, 0x69, 0x74,
 	0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x63, 0x67, 0x65, 0x6e, 0x74, 0x72, 0x6f, 0x6e,
-	0x2f, 0x70, 0x6c, 0x75, 0x67, 0x69, 0x6e, 0x61, 0x6d, 0x7a, 0x6e, 0x2f, 0x61, 0x70, 0x69, 0x3b,
-	0x61, 0x70, 0x69, 0xf8, 0x01, 0x01, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x2f, 0x70, 0x6c, 0x75, 0x67, 0x69, 0x6e, 0x61, 0x6d, 0x7a, 0x6e, 0x2f, 0x70, 0x72, 0x6f, 0x74,
+	0x6f, 0x3b, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0xf8, 0x01, 0x01, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74,
+	0x6f, 0x33,
 }
 
 var (
-	file_fields_proto_rawDescOnce sync.Once
-	file_fields_proto_rawDescData = file_fields_proto_rawDesc
+	file_cgentron_amazon_fields_proto_rawDescOnce sync.Once
+	file_cgentron_amazon_fields_proto_rawDescData = file_cgentron_amazon_fields_proto_rawDesc
 )
 
-func file_fields_proto_rawDescGZIP() []byte {
-	file_fields_proto_rawDescOnce.Do(func() {
-		file_fields_proto_rawDescData = protoimpl.X.CompressGZIP(file_fields_proto_rawDescData)
+func file_cgentron_amazon_fields_proto_rawDescGZIP() []byte {
+	file_cgentron_amazon_fields_proto_rawDescOnce.Do(func() {
+		file_cgentron_amazon_fields_proto_rawDescData = protoimpl.X.CompressGZIP(file_cgentron_amazon_fields_proto_rawDescData)
 	})
-	return file_fields_proto_rawDescData
+	return file_cgentron_amazon_fields_proto_rawDescData
 }
 
-var file_fields_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
-var file_fields_proto_goTypes = []interface{}{
+var file_cgentron_amazon_fields_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
+var file_cgentron_amazon_fields_proto_goTypes = []interface{}{
 	(*Fields)(nil),          // 0: cgentron.amazon.Fields
 	(*Fields_DynamoDB)(nil), // 1: cgentron.amazon.Fields.DynamoDB
 }
-var file_fields_proto_depIdxs = []int32{
+var file_cgentron_amazon_fields_proto_depIdxs = []int32{
 	1, // 0: cgentron.amazon.Fields.dynamodb:type_name -> cgentron.amazon.Fields.DynamoDB
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
@@ -202,13 +204,13 @@ var file_fields_proto_depIdxs = []int32{
 	0, // [0:1] is the sub-list for field type_name
 }
 
-func init() { file_fields_proto_init() }
-func file_fields_proto_init() {
-	if File_fields_proto != nil {
+func init() { file_cgentron_amazon_fields_proto_init() }
+func file_cgentron_amazon_fields_proto_init() {
+	if File_cgentron_amazon_fields_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_fields_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_cgentron_amazon_fields_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Fields); i {
 			case 0:
 				return &v.state
@@ -220,7 +222,7 @@ func file_fields_proto_init() {
 				return nil
 			}
 		}
-		file_fields_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_cgentron_amazon_fields_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Fields_DynamoDB); i {
 			case 0:
 				return &v.state
@@ -233,25 +235,25 @@ func file_fields_proto_init() {
 			}
 		}
 	}
-	file_fields_proto_msgTypes[0].OneofWrappers = []interface{}{
+	file_cgentron_amazon_fields_proto_msgTypes[0].OneofWrappers = []interface{}{
 		(*Fields_Dynamodb)(nil),
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_fields_proto_rawDesc,
+			RawDescriptor: file_cgentron_amazon_fields_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   2,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_fields_proto_goTypes,
-		DependencyIndexes: file_fields_proto_depIdxs,
-		MessageInfos:      file_fields_proto_msgTypes,
+		GoTypes:           file_cgentron_amazon_fields_proto_goTypes,
+		DependencyIndexes: file_cgentron_amazon_fields_proto_depIdxs,
+		MessageInfos:      file_cgentron_amazon_fields_proto_msgTypes,
 	}.Build()
-	File_fields_proto = out.File
-	file_fields_proto_rawDesc = nil
-	file_fields_proto_goTypes = nil
-	file_fields_proto_depIdxs = nil
+	File_cgentron_amazon_fields_proto = out.File
+	file_cgentron_amazon_fields_proto_rawDesc = nil
+	file_cgentron_amazon_fields_proto_goTypes = nil
+	file_cgentron_amazon_fields_proto_depIdxs = nil
 }

@@ -3,7 +3,7 @@ syntax = "proto3";
 package cgentron.amazon;
 
 option cc_enable_arenas = true;
-option go_package = "github.com/cgentron/pluginamzn/api;api";
+option go_package = "github.com/cgentron/pluginamzn/proto;proto";
 
 message Fields {
   string selector = 1;
