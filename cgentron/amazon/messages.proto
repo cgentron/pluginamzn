@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package cgentron.amazon;
+
+import "cgentron/amazon/lambda.proto";
+
+option cc_enable_arenas = true;
+option go_package = "github.com/cgentron/pluginamzn/proto;proto";
+
+message Messages {
+  string selector = 1;
+
+  oneof pattern {
+    Lambda lambda   = 10;
+  }
+}

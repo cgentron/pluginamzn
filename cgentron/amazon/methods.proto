@@ -2,8 +2,6 @@ syntax = "proto3";
 
 package cgentron.amazon;
 
-import "cgentron/api/annotations.proto";
-
 option cc_enable_arenas = true;
 option go_package = "github.com/cgentron/pluginamzn/proto;proto";
 
@@ -14,8 +12,6 @@ message Methods {
   message Lambda {
     string function_name  = 1;
     string qualifier      = 2;
-
-   
   }
 
   message DynamoDB {

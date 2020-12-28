@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package cgentron.amazon;
+
+option cc_enable_arenas = true;
+option go_package = "github.com/cgentron/pluginamzn/proto;proto";
+ 
+ message Lambda {
+    string function_name  = 1;
+    string qualifier      = 2;
+}

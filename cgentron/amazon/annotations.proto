@@ -4,12 +4,17 @@ package cgentron.amazon;
 
 import "cgentron/amazon/methods.proto";
 import "cgentron/amazon/fields.proto";
+import "cgentron/amazon/messages.proto";
 import "google/protobuf/descriptor.proto";
 
 option go_package = "github.com/cgentron/pluginamzn/proto;proto";
 
 extend google.protobuf.MethodOptions {
   Methods methods = 12345679;
+}
+
+extend google.protobuf.MessageOptions {
+  Messages messages = 12345679;
 }
 
 extend google.protobuf.FieldOptions {
