@@ -1,5 +1,6 @@
 package pluginamzn
 
+// yaegi:tags safe
 import (
 	"context"
 
