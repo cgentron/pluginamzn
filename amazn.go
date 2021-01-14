@@ -2,6 +2,7 @@ package pluginamzn
 
 import (
 	"context"
+	"errors"
 
 	"google.golang.org/protobuf/proto"
 
@@ -33,6 +34,10 @@ func New(config *Config, name string) (iface.ResolverHandler, error) {
 
 func (a *Amazn) Resolve(context context.Context, req interface{}, resp interface{}) error {
 	in := req.(proto.Message)
+
+	if in == nil {
+		return errors.New("no message received")
+	}
 
 	opts := in.ProtoReflect().Descriptor().Options()
 	ext := proto.GetExtension(opts, pb.E_Messages).(*pb.Messages)
