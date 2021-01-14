@@ -3,11 +3,11 @@ package pluginamzn
 import (
 	"context"
 	"errors"
+	"fmt"
 
 	"google.golang.org/protobuf/proto"
 
 	"github.com/cgentron/api/iface"
-	pb "github.com/cgentron/pluginamzn/proto"
 )
 
 var _ iface.ResolverHandler = (*Amazn)(nil)
@@ -33,18 +33,22 @@ func New(config *Config, name string) (iface.ResolverHandler, error) {
 }
 
 func (a *Amazn) Resolve(context context.Context, req interface{}, resp interface{}) error {
+	fmt.Println(req)
+
 	in := req.(proto.Message)
+
+	fmt.Println(in)
 
 	if in == nil {
 		return errors.New("no message received")
 	}
 
-	opts := in.ProtoReflect().Descriptor().Options()
-	ext := proto.GetExtension(opts, pb.E_Messages).(*pb.Messages)
+	// opts := in.ProtoReflect().Descriptor().Options()
+	// ext := proto.GetExtension(opts, pb.E_Messages).(*pb.Messages)
 
-	if ext.GetLambda() != nil {
-		return nil
-	}
+	// if ext.GetLambda() != nil {
+	// 	return nil
+	// }
 
 	return nil
 }
